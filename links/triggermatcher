@@ -1,1 +1,1 @@
---link coscale_rabbitmq:rabbitmq
+--link coscale_rabbitmq:rabbitmq --link coscale_rserve:rserve
