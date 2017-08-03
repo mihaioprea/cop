@@ -82,11 +82,6 @@ for SERVICE in $DATA_SERVICES; do
     fi
 done
 
-if [ "$NAME" == "all" ]; then
-    echo "Sleeping 30 seconds to bring the data services up."
-    sleep 30
-fi
-
 # Run the coscale services
 for SERVICE in $COSCALE_SERVICES $LB_SERVICE; do
     if [ "$NAME" == "all" ] || [ "$NAME" == "coscale" ] || [ "$NAME" == "$SERVICE" ]; then
